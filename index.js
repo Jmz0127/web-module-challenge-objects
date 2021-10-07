@@ -68,7 +68,7 @@ const burger = {
 	}
 };
 
-console.log('task 2', burger.discount('public'));
+console.log('task 2', burger.discount('student'));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
@@ -86,6 +86,13 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
+const juliusReview = [];
+for (let i = 0; i < reviews.length; i++) {
+	if (reviews[i].name.includes('Julius')) {
+		juliusReview.push(reviews[i].feedback);
+	}
+}
+console.log('task 3', juliusReview);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
