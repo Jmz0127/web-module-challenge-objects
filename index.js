@@ -33,6 +33,14 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
+const pizza = { name: 'pizza', price: 5, category: 'Lunch' };
+const oj = { name: 'Orange Juice', price: 3, category: 'Beverage' };
+const toast = { name: 'Avocado Toast', price: 11, category: 'Breakfast' };
+
+console.log('task 1b', pizza);
+console.log('task 1b', oj);
+console.log('task 1b', toast);
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
 burger object below that automatically calculates price depending on the a string received as a parameter. 
