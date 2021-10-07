@@ -56,8 +56,19 @@ Using the burger object below do the following:
 const burger = {
 	name: 'Burger',
 	price: 18,
-	category: 'Lunch'
+	category: 'Lunch',
+	discount: function (staff) {
+		if (staff === 'teacher') {
+			return this.price * 0.75;
+		} else if (staff === 'student') {
+			return this.price * 0.75;
+		} else {
+			return this.price * 0.9;
+		}
+	}
 };
+
+console.log('task 2', burger.discount('public'));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
